@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nova Plantação</title>
+</head>
+<body>
+
+    <form id="novaplanta">
+
+        <fieldset>
+            
+            <h3>cadastre sua</h3>
+            <h2>plantação</h2>
+
+            <br>
+
+            <label for="novaplanta_nome">Nome</label>
+
+            <input 
+            type="text" 
+            name="nome" 
+            id="novaplanta_nome"
+            minlength="2"
+            maxlength="200"
+            placeholder="Digite o nome da planta"
+            required>
+
+            <br>
+
+            <label for="novaplanta_inicio">Início do cultivo</label>
+
+            <input 
+            type="date" 
+            name="inicio" 
+            id="novaplanta_inicio"
+            required>
+
+            <br>
+
+            <label for="novaplanta_tipo">Tipo de planta</label>
+
+            <select name="tipo" id="novaplanta_tipo">
+                <option value="0" disabled selected>Selecione o tipo</option>
+                <option value="frutas">Frutas</option>
+                <option value="verduras">Verduras</option>
+                <option value="legumes">Legumes</option>
+                <option value="cereais">Cereais e Grãos</option>
+                <option value="ornamentais">Plantas Ornamentais</option>
+                <option value="ervas">Ervas</option>
+
+            </select>
+
+            <br>
+
+            <label for="novaplanta_local">Local do cultivo</label>
+
+            <input 
+            type="text" 
+            name="local" 
+            id="novaplanta_local"
+            maxlength="500"
+            placeholder="Digite a localização desta plantação">
+
+            <br>
+
+            <label for="novaplanta_colher">Ponto de colheita</label>
+
+            <div id="container_colher">
+                <input 
+                type="number" 
+                name="colher" 
+                id="novaplanta_colher"
+                max="365">
+                dias
+            </div>
+
+            <br>
+
+            <button type="submit" name="cadastrar" id="novaplanta_cadastrar">Cadastrar nova plantação</button>
+
+            <button type="button" name="retornar" id="minhasplantas_retornar">Ver minhas plantações</button>
+
+        </fieldset>
+    
+    </form>
+
+    <dialog id="novaplanta_sucesso">
+
+        <div id="novaplanta_mostrar"></div>
+
+        <button type="button" name="ir_minhasplantas" id="btn_ir_minhasplantas">Ver minhas plantações</button>
+
+        <button type="button" name="fechar" id="novaplanta_fechar">Voltar para o cadastro</button>
+        
+    </dialog>
+
+    <script src="novaplanta.js" type="module"></script>
+    
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastre-se | Eva</title>
+</head>
+<body>
+    
+    <form id="novousuario">
+
+        <fieldset>
+
+            <div id="estilo_novousuario">
+
+                <h2>titulo</h2>
+                <h3>subtitulo</h3>
+
+                <br>
+
+                <label for="novousuario_nome">Nome</label>
+
+                <input 
+                type="text" 
+                name="nome" 
+                id="novousuario_nome"
+                minlength="2"
+                maxlength="300"
+                placeholder="Digite seu nome"
+                required>
+
+                <br>
+
+                <label for="novousuario_email">Email</label>
+
+                <input 
+                type="email" 
+                name="email" 
+                id="novousuario_email"
+                maxlength="300"
+                placeholder="exemplo@dominio.com"
+                required>
+
+                <br>
+
+                <label for="novousuario_senha">Senha</label>
+
+                <div id="cnt_novousuario_senha">
+
+                    <input 
+                    type="password" 
+                    name="senha" 
+                    id="novousuario_senha"
+                    minlength="6"
+                    maxlength="300"
+                    placeholder="Digite sua senha"
+                    required>
+
+                    <button type="button" name="mostrarsenha" id="novousuario_mostrarsenha">Mostrar</button>
+
+                </div>
+
+                <br>
+
+                <label for="novousuario_confirmarsenha">Confirmar senha</label>
+
+                <div id="cnt_novousuario_confirmarsenha">
+
+                    <input 
+                    type="password" 
+                    name="confirmar_senha" 
+                    id="novousuario_confirmarsenha" 
+                    minlength="6" 
+                    maxlength="300" 
+                    placeholder="Confirme sua senha" 
+                    required>
+
+                    <button type="button" name="mostrar_confirm" id="novousuario_mostrarconfirm">Mostrar</button>
+
+                </div>
+
+                <button type="submit" name="cadastrar" id="novousuario_cadastrar">Cadastre-se</button>
+
+                <p>Já tem uma conta? <a href="index.html">Faça login</a></p>
+
+            </div>
+
+        </fieldset>
+
+    </form>
+
+    <script src="novousuario.js" type="module"></script>
+
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | Eva</title>
+</head>
+<body>
+
+    <form id="login">
+
+        <fieldset>
+
+            <h2>Login</h2>
+            <h3>Olha quem voltou!</h3>
+
+            <br>
+
+            <label for="login_email">Email</label>
+
+                <input 
+                type="email" 
+                name="email" 
+                id="login_email" 
+                maxlength="300" 
+                placeholder="exemplo@dominio.com"
+                required>
+
+            <br>
+            
+            <label for="login_senha">Senha</label>
+
+            <div id="cnt_login_senha">
+                <input 
+                type="password" 
+                name="senha" 
+                id="login_senha" 
+                minlength="6" 
+                maxlength="300"
+                placeholder="Digite sua senha"
+                required>
+                <button type="button" name="mostrar" id="login_mostrar">Mostrar</button>
+            </div>
+
+            <br>
+
+            <button type="submit" name="entrar" id="login_entrar">Entrar</button>
+
+            <br>
+            
+            <p>Ainda não tem uma conta? <a href="novousuario.html">Cadastre-se</a></p>
+
+        </fieldset>
+
+    </form>
+
+    <script src="login.js" type="module"></script>
+    
+</body>
+</html>

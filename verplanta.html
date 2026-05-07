@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar Plantação</title>
+</head>
+<body>
+
+    <form id="verplanta">
+
+        <fieldset>
+            
+            <h3>Está é sua</h3>
+            <h2>plantação</h2>
+
+            <br>
+
+            <label for="verplanta_nome">Nome</label>
+
+            <input 
+            type="text" 
+            name="nome" 
+            id="verplanta_nome"
+            minlength="2"
+            maxlength="200"
+            placeholder="Digite o nome da planta"
+            required
+            readonly>
+
+            <br>
+
+            <label for="verplanta_inicio">Início do cultivo</label>
+
+            <input 
+            type="date" 
+            name="inicio" 
+            id="verplanta_inicio"
+            required
+            readonly>
+
+            <br>
+
+            <label for="verplanta_tipo">Tipo de planta</label>
+
+            <select name="tipo" id="verplanta_tipo" disabled>
+                <option value="" selected disabled>Selecione o tipo</option>
+                <option value="frutas" >Frutas</option>
+                <option value="verduras">Verduras</option>
+                <option value="legumes" >Legumes</option>
+                <option value="cereais">Cereais e Grãos</option>
+                <option value="ornamentais">Plantas Ornamentais</option>
+                <option value="ervas">Ervas</option>
+
+            </select>
+
+            <br>
+
+            <label for="verplanta_local">Local do cultivo</label>
+
+            <input 
+            type="text" 
+            name="local" 
+            id="verplanta_local"
+            maxlength="500"
+            placeholder="Digite a localização desta plantação"
+            readonly>
+
+            <br>
+
+            <label for="verplanta_colher">Ponto de colheita</label>
+
+            <div id="container_ver_colher">
+                <input 
+                type="number" 
+                name="colher" 
+                id="verplanta_colher"
+                max="365"
+                readonly>
+                dias
+            </div>
+
+            <br>
+
+            <button type="button" name="editar" id="verplanta_editar">Editar informações</button>
+
+            <button type="submit" name="salvar" id="verplanta_salvar" disabled>Salvar alterações</button>
+
+            <button type="button" name="deletar" id="verplanta_deletar">Excluir plantação</button>
+
+            <button type="button" name="retornar" id="minhasplantas_retornar">Ver minhas plantações</button>
+
+        </fieldset>
+    
+    </form>
+
+    <script src="verplanta.js" type="module"></script>
+    
+</body>
+</html>
