@@ -19,10 +19,6 @@ body {
 }
 
 fieldset {
-<<<<<<< HEAD
-    max-height: 80%;
-=======
->>>>>>> 05339dada884191380237156a1c2143cc20d1e9d
     position: relative;
     padding: 30px 40px;
     backdrop-filter: blur(10px);
@@ -30,12 +26,7 @@ fieldset {
     -webkit-backdrop-filter: blur(10px);
     border-radius: 23px;
     border: 1px solid rgba(184, 226, 171, 0.562);
-<<<<<<< HEAD
-    width: 950px;
-=======
-    width: 750px;
-    max-width: 90%;
->>>>>>> 05339dada884191380237156a1c2143cc20d1e9d
+    width: 900px;
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
@@ -74,29 +65,17 @@ h3 {
     margin: 25px 0;
     display: flex;
     flex-direction: column;
-<<<<<<< HEAD
-    max-height: 400px;
-=======
     gap: 16px;
-    max-height: 280px;
->>>>>>> 05339dada884191380237156a1c2143cc20d1e9d
+    max-height: 200px;
     overflow-y: auto;
     padding-right: 10px;
 }
 
-<<<<<<< HEAD
-/* Estilo para cada planta (card dinâmico) */
-=======
->>>>>>> 05339dada884191380237156a1c2143cc20d1e9d
 #container_planta > div, 
 #container_planta > p {
     background: rgba(0, 0, 0, 0.4);
     border-radius: 16px;
-<<<<<<< HEAD
     padding: 14px 18px;
-=======
-    padding: 10px 14px;
->>>>>>> 05339dada884191380237156a1c2143cc20d1e9d
     border-left: 4px solid #9EF01A;
     font-size: 14px;
     backdrop-filter: blur(4px);
@@ -106,26 +85,18 @@ h3 {
     margin: 0 0 6px 0;
     font-weight: 600;
     font-size: 20px;
-<<<<<<< HEAD
-=======
     margin-bottom: -10px;
->>>>>>> 05339dada884191380237156a1c2143cc20d1e9d
     color: #eaffd0;
 }
 
 #container_planta button.visualizar-planta {
-<<<<<<< HEAD
     margin-top: 10px;
-=======
-    margin-top: -10px;
->>>>>>> 05339dada884191380237156a1c2143cc20d1e9d
     background: linear-gradient(to right, #1ab3f0, #0b68c0, #062c7e);
     font-family: Poppins, sans-serif;
     font-weight: 500;
     font-size: 13px;
     color: white;
     border: none;
-<<<<<<< HEAD
     width: 120px;
     border-radius: 20px;
     padding: 7px 18px;
@@ -137,15 +108,11 @@ h3 {
 
 div#botoes{
     display: flex;
-    gap: 25px;
-=======
-    border-radius: 9px;
-    padding: 7px 18px;
-    cursor: pointer;
-    transition: none;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.3);
-    width: 120px;
->>>>>>> 05339dada884191380237156a1c2143cc20d1e9d
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    padding: 25px;
+    gap: 15px;
 }
 
 fieldset button {
@@ -158,23 +125,9 @@ fieldset button {
     border-radius: 12px;
     padding: 12px 0;
     margin: 8px 0;
-<<<<<<< HEAD
     width: 260px;
     cursor: pointer;
     background: linear-gradient(to right, #9EF01A, #61C322, #179317);
-=======
-    cursor: pointer;
-    width: 240px;
-}
-
-div#container_bt{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    padding: 25px;
-    gap: 75px;
->>>>>>> 05339dada884191380237156a1c2143cc20d1e9d
 }
 
 fieldset button#minhasplantas_recarregar {
@@ -189,10 +142,7 @@ fieldset button#sair_eva {
     background: linear-gradient(to right, #f05a5a, #c20b0b, #7e0606);
 }
 
-<<<<<<< HEAD
 /* Scrollbar personalizada (opcional) */
-=======
->>>>>>> 05339dada884191380237156a1c2143cc20d1e9d
 #container_planta::-webkit-scrollbar {
     width: 6px;
 }
