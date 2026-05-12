@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nova Plantação</title>
+    <link rel="stylesheet" href="novaplanta.css">
 </head>
 <body>
 
@@ -27,7 +28,9 @@
             placeholder="Digite o nome da planta"
             required>
 
-            <br>
+            <div id="macro_cont">
+
+            <div id="container_a">
 
             <label for="novaplanta_inicio">Início do cultivo</label>
 
@@ -37,7 +40,6 @@
             id="novaplanta_inicio"
             required>
 
-            <br>
 
             <label for="novaplanta_tipo">Tipo de planta</label>
 
@@ -52,7 +54,9 @@
 
             </select>
 
-            <br>
+            </div>
+
+            <div id="container_b">
 
             <label for="novaplanta_local">Local do cultivo</label>
 
@@ -62,8 +66,6 @@
             id="novaplanta_local"
             maxlength="500"
             placeholder="Digite a localização desta plantação">
-
-            <br>
 
             <label for="novaplanta_colher">Ponto de colheita</label>
 
@@ -76,11 +78,17 @@
                 dias
             </div>
 
-            <br>
+            </div>
+
+            </div>
+
+            <div id="container_bt">
 
             <button type="submit" name="cadastrar" id="novaplanta_cadastrar">Cadastrar nova plantação</button>
 
             <button type="button" name="retornar" id="minhasplantas_retornar">Ver minhas plantações</button>
+
+            </div>
 
         </fieldset>
     
