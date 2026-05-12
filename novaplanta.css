@@ -87,7 +87,11 @@ input#novaplanta_colher{
 select{
     font-family: Poppins;
     font-weight: 300;
+<<<<<<< HEAD
     font-size: 10.5px;
+=======
+    font-size: 13.5px;
+>>>>>>> 05339dada884191380237156a1c2143cc20d1e9d
     width: 500px;
     padding: 12px;
     box-sizing: border-box;
@@ -104,7 +108,11 @@ select option{
 input{
     font-family: Poppins;
     font-weight: 300;
+<<<<<<< HEAD
     font-size: 12.5px;
+=======
+    font-size: 13.5px;
+>>>>>>> 05339dada884191380237156a1c2143cc20d1e9d
     width: 500px;
     padding: 12px;
     box-sizing: border-box;
@@ -200,4 +208,8 @@ button#btn_ir_minhasplantas{
     width: 180px;
     margin-top: 40px;
     margin-right: 20px;
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 05339dada884191380237156a1c2143cc20d1e9d

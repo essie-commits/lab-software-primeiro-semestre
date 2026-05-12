@@ -28,7 +28,7 @@ async function exibirPlantas() {
         let cardPlanta = '';
 
         for (const planta of plantas) {
-            cardPlanta += `<h3>${planta.nome}</h3>` + `${planta.tipo} | ${planta.inicio}` + `<br>` + `<button class="visualizar-planta" data-id="${planta.id}">Visualizar</button>`           
+            cardPlanta += `<h3>${planta.nome}</h3>` + `${planta.tipo} | ${planta.inicio}` + `<button class="visualizar-planta" data-id="${planta.id}">Visualizar</button>`           
         }
 
         containerPlantas.innerHTML = cardPlanta;
