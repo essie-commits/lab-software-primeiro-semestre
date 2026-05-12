@@ -4,19 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login | Eva</title>
+    <link rel="stylesheet" href="login.css">
 </head>
 <body>
 
     <form id="login">
 
-        <fieldset>
+        <fieldset id="login_field">
 
-            <h2>Login</h2>
-            <h3>Olha quem voltou!</h3>
+            <h2 id="titulo">Login</h2>
+            <h3 id="subtitulo">Olha quem voltou!</h3>
 
-            <br>
 
             <label for="login_email">Email</label>
+
+            <div class="container_input" id="cnt_login_email">
 
                 <input 
                 type="email" 
@@ -26,7 +28,7 @@
                 placeholder="exemplo@dominio.com"
                 required>
 
-            <br>
+            </div>
             
             <label for="login_senha">Senha</label>
 
@@ -42,13 +44,13 @@
                 <button type="button" name="mostrar" id="login_mostrar">Mostrar</button>
             </div>
 
-            <br>
+<div id="cnt_login_inf">
 
             <button type="submit" name="entrar" id="login_entrar">Entrar</button>
-
-            <br>
             
             <p>Ainda não tem uma conta? <a href="novousuario.html">Cadastre-se</a></p>
+
+</div>
 
         </fieldset>
 

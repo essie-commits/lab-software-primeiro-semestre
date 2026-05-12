@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Editar Plantação</title>
+    <link rel="stylesheet" href="verplanta.css">
 </head>
 <body>
 
@@ -28,7 +29,9 @@
             required
             readonly>
 
-            <br>
+            <div id="macro_cont">
+
+            <div id="container_a">
 
             <label for="verplanta_inicio">Início do cultivo</label>
 
@@ -38,8 +41,6 @@
             id="verplanta_inicio"
             required
             readonly>
-
-            <br>
 
             <label for="verplanta_tipo">Tipo de planta</label>
 
@@ -54,7 +55,9 @@
 
             </select>
 
-            <br>
+            </div>
+
+            <div id="container_b">
 
             <label for="verplanta_local">Local do cultivo</label>
 
@@ -65,8 +68,6 @@
             maxlength="500"
             placeholder="Digite a localização desta plantação"
             readonly>
-
-            <br>
 
             <label for="verplanta_colher">Ponto de colheita</label>
 
@@ -80,7 +81,12 @@
                 dias
             </div>
 
-            <br>
+            </div>
+            
+        </div>
+
+
+            <div id="container_bt">
 
             <button type="button" name="editar" id="verplanta_editar">Editar informações</button>
 
@@ -88,7 +94,9 @@
 
             <button type="button" name="deletar" id="verplanta_deletar">Excluir plantação</button>
 
-            <button type="button" name="retornar" id="minhasplantas_retornar">Ver minhas plantações</button>
+            </div>
+
+                        <button type="button" name="retornar" id="minhasplantas_retornar">Ver meu jardim</button>
 
         </fieldset>
     

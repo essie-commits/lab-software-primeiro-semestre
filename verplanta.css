@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+html {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin: 0;
+    color: white;
+    background-image: url('unsplash_PvwdlXqo85k.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: Poppins, sans-serif;
+}
+
+fieldset {
+    justify-content: flex-start;
+    padding: 30px 40px;
+    position: relative;
+    backdrop-filter: blur(10px);
+    background: rgba(225, 240, 219, 0.171);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 23px;
+    border: 1px solid rgba(184, 226, 171, 0.562);
+    width: 750px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+fieldset::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(15px);
+    z-index: -1;
+    border-radius: 23px;
+}
+
+h2 {
+    margin-top: 20px;
+    font-weight: 600;
+    font-size: 33.72px;
+}
+
+h3 {
+    font-weight: 400;
+    font-size: 19px;
+    margin-bottom: -30px;
+}
+
+label {
+    font-weight: 500;
+    font-size: 18px;
+    display: block;
+    margin-bottom: 5px;
+}
+
+div#macro_cont {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+div#container_a, div#container_b {
+    padding: 30px 0 0 0;
+    flex: 1;
+}
+
+/* Estilos gerais para inputs e select */
+input, select {
+    font-family: Poppins, sans-serif;
+    font-weight: 300;
+    font-size: 12.5px;
+    padding: 12px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    background-color: rgba(217, 217, 217, 0.2);
+    border: 1px solid rgb(106, 155, 202);
+    color: rgba(255, 255, 255, 0.7);
+}
+
+input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+select option {
+    color: rgba(105, 105, 105, 0.7);
+    background: white;
+}
+
+/* Larguras específicas */
+#verplanta_nome {
+    width: 100%;
+}
+
+#verplanta_inicio, #verplanta_local {
+    margin-bottom: 30px;
+}
+
+#verplanta input[type="text"], 
+#verplanta input[type="date"], 
+#verplanta select {
+    width: 100%;
+}
+
+#verplanta_colher {
+    width: 100px;
+}
+
+/* Container para campo colheita com dias */
+#container_ver_colher, #container_colher {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 5px;
+}
+
+/* Estado readonly e disabled */
+input:read-only, select:disabled {
+    opacity: 0.8;
+    cursor: default;
+    background-color: rgba(100, 100, 100, 0.2);
+}
+
+/* Botões do formulário */
+#container_bt {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 25px 0 15px 0;
+}
+
+#container_bt button, button#minhasplantas_retornar {
+    font-family: Poppins, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: white;
+    border: none;
+    border-radius: 5.5px;
+    padding: 12px 0;
+    cursor: pointer;
+    transition: filter 0.2s ease, opacity 0.2s ease;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+div#container_bt{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: row;
+    gap: 5px;
+}
+
+button#minhasplantas_retornar,
+button#verplanta_editar,
+button#verplanta_salvar,
+button#verplanta_deletar {
+    width: 170px;
+    margin: 7px;
+}
+
+/* Cores específicas dos botões */
+button#verplanta_editar {
+    background: linear-gradient(to right, #1ab3f0, #0b68c0, #062c7e);
+}
+
+button#verplanta_salvar {
+    background: linear-gradient(to right, #9EF01A, #61C322, #179317);
+}
+
+button#verplanta_salvar:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    transform: none;
+    filter: none;
+}
+
+button#verplanta_deletar {
+    background: linear-gradient(to right, #f05a5a, #c20b0b, #7e0606);
+}
+
+button#minhasplantas_retornar {
+    background: linear-gradient(to right, #1ab3f0, #0b68c0, #062c7e);
+}
+
+/* Ajustes de espaçamento interno para os campos */
+#container_a label,
+#container_b label {
+    margin-top: 5px;
+}
+
+/* Garantia que o select desabilitado mantenha texto legível */
+select:disabled {
+    -webkit-text-fill-color: rgba(255, 255, 255, 0.7);
+}
